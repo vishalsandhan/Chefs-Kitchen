@@ -1,0 +1,383 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    font-family: 'Amatic SC', cursive;
+    /* overflow-x: hidden; */
+}
+html{
+    scroll-behavior: smooth;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 580;
+}
+
+
+/* Navigation bar */
+#navigation_bar{
+    display: flex;
+    height: 75px;
+    justify-content: center;
+    align-items: center;
+    background-color: black; opacity: 0.7;
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+}
+
+
+#logo {
+    width: 71px;
+    margin: 0px 48px;
+    border-radius: 40px;
+    z-index: 20;
+}
+
+/* Navigation Bar : list styling */
+ul{
+   display: flex;
+   justify-content:space-evenly;
+   align-self: center;
+   padding: 5px 8px;
+   width: 650px;
+   margin: auto;
+}
+
+li{
+    list-style: none;
+
+}
+
+li a{
+   margin: 5px;
+   padding: 5px 10px;
+   font-weight: bold;
+   color: greenyellow;
+   font-size: large;
+   font-family:'Times New Roman', Times, serif;
+}
+
+li a:hover{
+    text-decoration: none;
+    color: #f6ff00;
+}
+
+
+/* Section Styling */
+#theory{
+    z-index: 2;
+}
+#web_name{
+    color: #f8ff33;
+    text-shadow: 3px 3px 2px black;
+    font-weight:bolder;
+    font-size: 90px;
+}
+#sec1{
+    color: black;
+    width: 90%;
+    text-align: center;
+    align-content: center;
+    margin:10px auto;
+    height: 545px;
+}
+#sec1 h1{
+    font-size: 4.5rem;
+    margin-top: 145px;
+    margin-bottom: 50px;
+}
+#sec1 p{
+    font-size: 1.5rem;
+    margin: 20px;
+}
+
+#sec1::before{
+    content: "";
+    background: url('https://source.unsplash.com/collection/190727/1600 x 900') no-repeat center center/cover;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    height: 670px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* Utility Functions */
+.center{
+    text-align: center;
+}
+
+
+/* Our services */
+#Services h1{
+    font-weight: bold;
+    color: #000;
+    font-size: 50px;
+    margin-bottom:  10px;
+}
+
+#Services{
+    display: flex;
+    flex-direction: column;
+}
+#container{
+    display: flex;
+    margin: 10px auto;
+    background: url("/background_black.jpg")no-repeat center center/cover;
+}
+#Services .box{
+    border-radius: 12px;
+    text-align: center;
+    margin: 20px 10px;
+    padding: 10px;
+    border: 2px solid red;
+    background-color: rgb(219, 226, 232);
+}
+
+.ser_img{
+    width: 350px;
+    display: block;
+    margin: 15px auto;
+    border-radius: 5px;
+}
+
+
+#Services .box p{
+    margin: 12px 0px;
+    padding: 15px;
+}
+
+.headings{
+    margin:10px auto;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+
+/* Dishes Section */
+h1{
+    font-size: 50px;
+}
+#headings{
+    margin: 20px auto;
+    text-align: center;
+    color: black;
+}
+#dishes_heading p{
+    margin-top: 20px;
+}
+#fresh{
+    margin: 2px auto;
+    text-align: center;
+}
+#Dishes{
+    /* height: 550px; */       /*height dilya mule courosal ci gand lagat hoti*/
+    overflow-x: hidden;
+                        
+}
+
+#carouselExampleControls{
+    margin-top: 50px;
+}
+
+.col{
+    text-align: center;
+}
+.col h5{
+    margin: 10px;
+    font-size: 1.95rem;
+}
+
+.carousel-inner{
+    margin: 5px 20px;
+}
+.d-block{
+    border: 2px solid black;
+}
+
+
+/* Contact section */
+#contact_heading{
+    margin-bottom:  28px;
+}
+
+#back{
+    background-color: black; opacity: 0.8;
+}
+
+.contact_details{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact_items{
+    /* width: 400px; */
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+}
+.map{
+    width: 94%;
+    margin: auto;
+}
+#insta{
+    width: 150px;
+    margin: 10px auto;
+}
+#insta:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+#copyright{
+    margin: 10px auto;
+    text-align: center;
+}
+
+#contact{
+    color: white;
+}
+
+/* responsive css */
+
+@media  (max-width: 1200px) {
+   /* Navigation section */
+
+
+/* Home section */
+#web_name{
+    font-size: 70px;
+}
+#sec1{
+    display: flex;
+    height: 600px;
+}
+#sec1 h1{
+    font-size: 3.3rem;
+    margin-top: 145px;
+    margin-bottom: 45px;
+}
+#sec1 p{
+    font-size: 1.1rem;
+    margin: 20px;
+}
+#sec1::before{
+    height:600px
+}
+/* Services section */
+.section{
+    height: 900px;
+}
+#container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#Services .box{
+    width: 90%;
+}
+.ser_img{
+    display: block;
+    margin: 15px auto;
+}
+
+/* Dishesh section */
+
+
+/* Contact section */
+
+}
+
+
+
+@media  screen and (max-width: 800px){
+   
+    /* Navigation bar */
+    #navigation_bar{
+        flex-direction: column;
+        height: 120px;
+    }
+    #logo{
+        margin-top: 2px;
+    }
+
+    /* Navigation Bar : list styling */
+    ul{
+        padding: 0px 0px;
+        width: 450px;
+    }
+    
+    li{
+        list-style: none;
+    }
+    
+    li a{
+        margin: 0px;
+        padding: 0px 5px;
+        font-size: 15px;
+    }
+
+ /* Home section */
+ #sec1{
+    height: 650px;
+}
+ #sec1 h1 {
+    font-size: 3.0rem;
+    margin-top: 140px;
+    margin-bottom: 38px;
+    }
+
+    #sec1 p{
+        font-size: 1rem;
+        margin: 15px;
+    }
+    #web_name{
+        font-size: 60px;
+    }
+
+    #sec1::before{
+        height:650px
+    }
+
+    /* contact */
+    .contact_items h3{
+        font-size: 20px;
+    }
+    .contact_items p{
+        font-size: 11.5px;
+    }
+
+}
+
+@media (max-width: 450px) {
+    /* navigation section */
+    ul{
+        width: 350px;
+    }
+
+
+    /* Home section */
+ #sec1 h1 {
+    font-size: 2.rem;
+    margin-top: 120px;
+    margin-bottom: 30px;
+    }
+
+    #sec1 p{
+        font-size: 0.94rem;
+        margin: 15px;
+    }
+    
+
+    /* Servises section */
+    .ser_img{
+        
+        width: 250px;
+        display: block;
+        margin: 15px auto;
+    }
+
+}
